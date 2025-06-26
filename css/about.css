@@ -1,0 +1,279 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-us-wrapper {
+  background: #fffaf2;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+/* === Hero Section === */
+.hero-section {
+  background: linear-gradient(135deg, #fff3e0, #fffaf2);
+  padding: 60px 30px;
+  margin: 0 auto 60px;
+  max-width: 90%;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #ff6600;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-subtext {
+  color: #555;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 260px;
+  text-align: right;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* === Features Section === */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #fffaf2;
+}
+
+.feature-box {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 14px;
+  flex: 1 1 260px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+}
+
+.feature-box h3 {
+  font-size: 20px;
+  color: #ff6600;
+  margin: 10px 0;
+}
+
+.feature-box p {
+  font-size: 15px;
+  color: #555;
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 14px;
+}
+
+/* === Stats Section === */
+.stats-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+.stat-block h2 {
+  font-size: 36px;
+  color: #ff6600;
+  margin-bottom: 8px;
+}
+
+.stat-block p {
+  font-size: 15px;
+  color: #222;
+}
+
+/* === About Highlight Section === */
+.about-highlight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fffaf2;
+  padding: 60px 20px;
+}
+
+.about-highlight .text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.about-highlight .image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-highlight .image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.about-highlight h2 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.about-highlight h3 {
+  font-size: 24px;
+  color: #ff6600;
+  margin-bottom: 12px;
+}
+
+.about-highlight p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* === Benefits Section === */
+.benefit-section {
+  background-color: #fffaf2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefit-section h2 {
+  color: #ff6600;
+  font-size: 22px;
+}
+
+.benefit-section h3 {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.benefits div {
+  background-color: #fff;
+  color: #222;
+  flex: 1 1 260px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease;
+}
+
+.benefits div:hover {
+  transform: translateY(-4px);
+}
+
+.benefits h4 {
+  color: #ff6600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.benefits p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* === Promo Section === */
+.pastel-promo-section {
+  background-color: #fff3e0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pastel-promo {
+  background: linear-gradient(135deg, #ffe0dc, #fffaf2);
+  padding: 40px 50px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+}
+
+.promo-left h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.promo-left p {
+  font-size: 16px;
+  color: #444;
+}
+
+.promo-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+  background-color: #e55700;
+  transform: scale(1.05);
+}

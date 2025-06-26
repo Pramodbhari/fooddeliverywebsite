@@ -1,0 +1,68 @@
+/* App.css or Login.css */
+
+.login-container {
+    max-width: 400px;
+    margin: 50px auto; /* Center the container horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    
+}
+
+form div {
+    margin-bottom: 15px;
+    width: 100%; /* Make the div take full width */
+    align-items: center;
+    text-align: center;
+    
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%; /* Set a width for the input fields */
+    max-width: 300px; /* Optional: limit the maximum width */
+}
+
+#t1 {
+    padding: 10px;
+    background-color: #00796b; /* Teal color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%; /* Center button with the same width as input fields */
+    max-width: 300px; /* Optional: limit the maximum width */
+}
+
+#t2 {
+    padding: 6px;
+    background-color: #00796b; /* Teal color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 20%; /* Center button with the same width as input fields */
+    max-width: 300px; /* Optional: limit the maximum width */
+}
+
+#t1:hover,
+#t2:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}
+
+p {
+    text-align: center;
+}

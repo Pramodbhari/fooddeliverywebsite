@@ -1,0 +1,120 @@
+.order-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.order-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-list {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  flex: 1;
+  min-width: 200px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.order-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.order-item div {
+  line-height: 1.2;
+}
+
+.extra-count {
+  font-weight: bold;
+  background-color: #eee;
+  padding: 0 10px;
+  border-radius: 6px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.order-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+}
+
+.order-actions button {
+  padding: 8px 12px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.order-actions button:hover {
+  background-color: #eaeaea;
+}
+
+.track-btn {
+  background-color: #72d672;
+  color: white;
+  border: none;
+}
+
+.track-btn:hover {
+  background-color: #5cc55c;
+}
+
+.order-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.blink-green {
+  background-color: #28a745;
+  animation: blink 1s infinite;
+}
+
+.gray {
+  background-color: #999;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.order-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}

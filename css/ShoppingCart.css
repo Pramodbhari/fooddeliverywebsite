@@ -1,0 +1,152 @@
+.shopping-cart-layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .shopping-cart-panel {
+    flex: 2;
+  }
+  
+  .shopping-cart-panel h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .cart-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  
+  .item-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .item-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .item-info h4 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .item-info p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .item-qty {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .item-qty button {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .item-price {
+    font-weight: bold;
+  }
+  
+  .item-remove svg {
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .shopping-cart-summary {
+    flex: 1;
+    padding: 25px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: fit-content;
+  }
+  
+  .shopping-cart-summary h3 {
+    margin-bottom: 20px;
+  }
+  
+  .voucher-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .voucher-row input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .voucher-row button {
+    padding: 8px 40px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .summary-breakdown p,
+  .summary-total p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .summary-total p {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .warranty {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 15px 0;
+  }
+  
+  .warranty label {
+    font-size: 14px;
+  }
+  
+  .warranty a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  

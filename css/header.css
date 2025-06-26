@@ -1,0 +1,261 @@
+/* ----------  NAVBAR  ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  padding: 1.5rem 3rem;
+  background-color: var(--porcelain-white);
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+/* ----------  LOGO  ---------- */
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--jet-black);
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--jet-black);
+  position: relative;
+  z-index: 2;
+  letter-spacing: -1px;
+}
+
+.logo-icon {
+  font-size: 4rem;
+  color: var(--jet-black);
+  position: absolute;
+  left: 100px;
+  top: -20px;
+  transform: rotate(-25deg);
+  z-index: 1;
+}
+
+/* ----------  NAV LINKS  ---------- */
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--jet-black);
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--jet-black);
+  transition: width .3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+/* ----------  ICONS & BUTTONS  ---------- */
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--jet-black);
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: var(--porcelain-white);
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.sign-in-button {
+  text-decoration: none;
+  color: var(--jet-black);
+  font-weight: 600;
+  border: 1px solid var(--ash-gray);
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.sign-in-button:hover {
+  background: var(--jet-black);
+  color: var(--porcelain-white);
+  border-color: var(--jet-black);
+}
+
+/* ----------  SEARCH  ---------- */
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid var(--jet-black);
+  border-radius: 25px;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.search-input:focus {
+  border-color: #5e2c37;
+}
+
+/* ----------  DROPDOWN  ---------- */
+.dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  width: 280px;
+  background: var(--porcelain-white);
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+  padding: 16px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: all .3s ease;
+}
+
+.dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ash-gray);
+}
+
+.profile-info .name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-info .email {
+  font-size: 12px;
+  color: var(--ash-gray);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 6px;
+  font-size: 14px;
+  color: var(--jet-black);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background .2s ease;
+}
+
+.menu-item:hover {
+  background: #f2f2f2;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  color: var(--porcelain-white);
+  border: none;
+  padding: 10px 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background .3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-btn:hover {
+  background: #d63031;
+}
+
+.footer {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ash-gray);
+}
+
+.footer a {
+  color: var(--ash-gray);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------  RESPONSIVE  ---------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+    margin-top: .5rem;
+  }
+
+  .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .logo-icon {
+    font-size: 3rem;
+    left: 80px;
+    top: -10px;
+  }
+}

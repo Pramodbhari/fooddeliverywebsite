@@ -1,0 +1,87 @@
+.order-success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .order-success-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .order-success-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4CAF50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-success-message {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .order-summary {
+    background-color: #f4f4f4;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .order-summary-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+  }
+  
+  .order-summary-item p {
+    font-weight: 600;
+  }
+  
+  .order-summary-item span {
+    font-weight: 400;
+    color: #777;
+  }
+  
+  .order-success-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-shopping {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .continue-shopping:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-orders {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .view-orders:hover {
+    background-color: #218838;
+  }
+  
